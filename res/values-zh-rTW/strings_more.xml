@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="more_fontswitch">中文簡體，繁體切換</string>
+    <string name="more_photoswitch">省流量</string>
+    <string name="more_photoswitchnote">2G，3G下不显示图片</string>
+    <string name="more_cacheclean">清除缓存</string>
+    <string name="more_centent">更多</string>
+    <string name="more_about">關於港港</string>
+    <string name="more_mianze">免責声明</string>
+	<string name="more_fuwuxieyi">服務協定</string>
+    
+</resources>

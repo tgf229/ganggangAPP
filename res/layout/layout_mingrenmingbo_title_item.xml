@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_fenlei_mingrenmingbo"
+    style="@style/style_fragment_home_fenlei_layout"
+    android:layout_height="40dp"
+    android:background="@drawable/drawable_layout_fenlei"
+    android:orientation="horizontal" >
+
+    <TextView
+        style="@style/style_fragment_home_fenlei_font"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/home_text_mingrenmingbo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_module_home_feilei_mingrenmingbo"
+            style="@style/style_fragment_home_fenlei_img"
+            android:layout_gravity="right"
+            android:src="@drawable/xiajiantou_icon" />
+    </LinearLayout>
+
+</LinearLayout>

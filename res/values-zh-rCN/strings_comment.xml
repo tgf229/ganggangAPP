@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="comment_edittext_hint">留下你想说的吧......</string>
+    <string name="comment_submit_button">发表</string>
+    <string name="comment_comment">用户评论</string>
+    <string name="comment_top_centent">点评</string>
+    <string name="comment_show_not_sub">登录后，才可评论</string>
+    <string name="comment_show_not_comment">请填写评论内容</string>
+    <string name="comment_show_not_business">没有商家，无法评论</string>
+</resources>

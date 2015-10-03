@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string  name="popwindow_moren">默认排序</string>
+    <string name="popwindow_haoping">好评优先</string>
+    <string name="popwindow_renqi">人气最高</string>
+    <string name="popwindow_zuijin">离我最近</string>
+
+</resources>

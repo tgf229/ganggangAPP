@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" >
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:id="@+id/map_return_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_map_back" />
+        
+        <ImageView 
+            android:id="@+id/map_shuaxin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dt_shuaxin"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/map_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/ganggang_color"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/map_bus"
+            style="@style/map_bottom_font"
+            android:layout_marginLeft="10dp"
+            android:drawableTop="@drawable/bus_on"
+            android:text="@string/map_bus" />
+
+        <!--
+             <TextView
+            android:id="@+id/map_bus_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/map_color"
+            android:textSize="16sp" />
+        -->
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/map_drive"
+            style="@style/map_bottom_font"
+            android:drawableTop="@drawable/drive_on"
+            android:text="@string/map_drives" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/map_walk"
+            style="@style/map_bottom_font"
+            android:drawableTop="@drawable/walk_on"
+            android:text="@string/map_walk" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/business_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <ProgressBar
+        android:id="@+id/business_detail_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/business_detail_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 店图片 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <ImageView
+                    android:id="@+id/business_detail_begin_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/moren_img" />
+
+                <RelativeLayout
+                    android:id="@+id/business_detail_begin_picture_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/business_bg_name" >
+
+                    <!-- 店家名称 -->
+
+                    <TextView
+                        android:id="@+id/business_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <!-- 好评 -->
+
+                    <TextView
+                        android:id="@+id/business_detail_highOpinion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- 地址 -->
+
+            <LinearLayout
+                android:id="@+id/activity_business_detail_location_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/huise_button" />
+
+                <TextView
+                    android:id="@+id/business_detail_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <View style="@style/style_business_detail_v_view" />
+
+                <ImageView
+                    android:id="@+id/business_detail_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/dianhua_icon" />
+            </LinearLayout>
+            <!-- 分隔线 -->
+
+            <View style="@style/style_business_detail_h_view" />
+
+            <com.ganggang.frame.common.FlowLayout
+                android:id="@+id/business_detail_hot_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <!--
+                     <TextView
+                    style="@style/style_business_detail_hot_text"
+                    android:text="粤菜" />
+                -->
+            </com.ganggang.frame.common.FlowLayout>
+            <!-- 推荐菜 -->
+
+            <LinearLayout
+                android:id="@+id/business_detail_commodity_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/business_advice"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <!-- 推荐菜图片 -->
+
+                <com.ganggang.frame.common.FlowLayout
+                    android:id="@+id/business_detail_commodity_img_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <!--
+                    <ImageView
+                        style="@style/style_business_detail_commodity_img"
+                        android:src="@drawable/business_food1" />
+                    -->
+
+                </com.ganggang.frame.common.FlowLayout>
+            </LinearLayout>
+            <!-- 商户详情 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/business_detail_relativelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/business_detail"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/business_detail_youjiantou"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/xiajiantou_icon" />
+                </RelativeLayout>
+
+                <View style="@style/style_business_detail_h_view" />
+                <!-- 内容 -->
+
+                <LinearLayout
+                    android:id="@+id/business_detail_linearlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <!-- 简介 -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/business_summary_title"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                    <!-- 内容 -->
+
+                    <TextView
+                        android:id="@+id/business_detail_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/home_fenlei_font"
+                        android:textSize="14sp" />
+
+                    <View style="@style/style_business_detail_h_view" />
+                    <!-- 营业时间 -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/business_time_title"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                    <!-- 营业时间内容 -->
+
+                    <TextView
+                        android:id="@+id/business_detail_time_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/home_fenlei_font"
+                        android:textSize="14sp" 
+                        />
+
+                    <View style="@style/style_business_detail_h_view" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/business_traffic_title"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/business_detail_traffic_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/home_fenlei_font"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 用户点评 -->
+
+            <LinearLayout
+                android:id="@+id/business_detail_comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <!-- 头部title -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/business_comment_title"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                    <!-- 数量 -->
+
+                    <TextView
+                        android:id="@+id/business_detail_comment_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/home_fenlei_font"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right"
+                            android:src="@drawable/write_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/business_more"
+                            android:textColor="@color/home_fenlei_font"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/style_business_detail_h_view" />
+
+                <LinearLayout
+                    android:id="@+id/business_detail_comment_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/business_detail_comment_content_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/home_fenlei_font"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_comment_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:maxLines="5"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/home_fenlei_font"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 附近的分店 和 附近所有的分店 -->
+
+            <ExpandableListView
+                android:id="@+id/business_detail_expandablelistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:cacheColorHint="@color/white"
+                android:childDivider="@color/white"
+                android:divider="@color/white"
+                android:dividerHeight="10dp"
+                android:groupIndicator="@null" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

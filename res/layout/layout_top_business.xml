@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/home_top_layout"
+    android:orientation="horizontal" >
+
+    <ImageView style="@style/style_top_img_ganggang" />
+
+    <LinearLayout
+        android:id="@+id/layout_top_bussiness_sreach"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/drawable_layout_seach"
+        android:onClick="TopClick"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/home_text_search"
+            android:textColor="@color/home_font_noclick_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/layout_top_bussiness_location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="TopClick"
+        android:padding="10dp"
+        android:src="@drawable/fujin_icon" />
+
+</LinearLayout>

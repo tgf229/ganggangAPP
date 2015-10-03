@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="comment_edittext_hint">留下你想說的吧……</string>
+    <string name="comment_submit_button">發表</string>
+    <string name="comment_comment">用戶評論</string>
+    <string name="comment_top_centent">點評</string>
+    <string name="comment_show_not_sub">登入後，才可評論</string>
+    <string name="comment_show_not_comment">請填寫評論內容</string>
+    <string name="comment_show_not_business">沒有商家，無法評論</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white" >
+
+        <com.ganggang.frame.common.PageFlipper
+            android:id="@+id/viewpager_module_business_adv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_module_business_adv_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+    <!-- 模块 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_layout_fenlei"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <!-- 分类 -->
+
+        <LinearLayout
+            android:id="@+id/layout_module_business_type"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/layout_module_business_type_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="@string/business_type"
+                android:textColor="@color/tab_text_color" />
+
+            <ImageView
+                android:id="@+id/layout_module_business_type_img"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/down" />
+        </LinearLayout>
+<!--
+        <View style="@style/style_business_type_view" />
+
+ 
+        <LinearLayout
+            android:id="@+id/layout_module_business_district"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/layout_module_business_district_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/business_district"
+                android:textColor="@color/tab_text_color" />
+
+            <ImageView
+                android:id="@+id/layout_module_business_district_img"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/down" />
+        </LinearLayout>
+ -->
+        <View style="@style/style_business_type_view" />
+
+        <LinearLayout
+            android:id="@+id/layout_module_business_desc"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/layout_module_business_desc_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="@string/business_desc"
+                android:textColor="@color/tab_text_color" />
+
+            <ImageView
+                android:id="@+id/layout_module_business_desc_img"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/down" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

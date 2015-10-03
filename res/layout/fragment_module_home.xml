@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <ProgressBar
+        android:id="@+id/fragment_module_home_progress"
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <com.ganggang.frame.common.MyScrollView
+        android:id="@+id/home_fragment_myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:overScrollMode="never"
+        android:focusable="true"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 广告部分 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                >
+
+                <com.ganggang.frame.common.PageFlipper
+                    android:id="@+id/viewpager_module_home_adv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/layout_module_home_adv_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+            <!-- 模块 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <!-- 香港热点 -->
+
+                    <com.ganggang.frame.common.MyModule_ImgLayout
+                        android:id="@+id/layout_module_redian"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/redian_icon"
+                        android:text="@string/home_text_redian" />
+                    <!-- 酒楼餐饮 -->
+
+                    <com.ganggang.frame.common.MyModule_ImgLayout
+                        android:id="@+id/layout_module_jiuloucanyin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/iconfont_unie"
+                        android:text="@string/home_text_chihe" />
+                    <!-- 数码影音 -->
+
+                    <com.ganggang.frame.common.MyModule_ImgLayout
+                        android:id="@+id/layout_module_shuma"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/iconfont_shuma"
+                        android:text="@string/home_text_zhusu" />
+                    <!-- 珠宝名牌 -->
+
+                    <com.ganggang.frame.common.MyModule_ImgLayout
+                        android:id="@+id/layout_module_zhubao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/iconfont_zuanshizhubao"
+                        android:text="@string/home_text_chuxing" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <!-- 购物天堂 -->
+
+                    <com.ganggang.frame.common.MyModule_ImgLayout
+                        android:id="@+id/layout_module_gouwu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/iconfont_gouwuche"
+                        android:text="@string/home_text_yule" />
+                    <!-- 保健药品 -->
+
+                    <com.ganggang.frame.common.MyModule_ImgLayout
+                        android:id="@+id/layout_module_yaopin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/iconfont_baojianpinbiaoshi"
+                        android:text="@string/home_text_gouwu" />
+                    <!-- 美容美体 -->
+
+                    <com.ganggang.frame.common.MyModule_ImgLayout
+                        android:id="@+id/layout_module_meirong"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/iconfont_meirongmeiti"
+                        android:text="@string/home_text_lvyou" />
+                    <!-- 专业服务 -->
+
+                    <com.ganggang.frame.common.MyModule_ImgLayout
+                        android:id="@+id/layout_module_fuwu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/iconfont_fuwu"
+                        android:text="@string/home_text_shenghuo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.amap.api.maps2d.MapView
+                android:id="@+id/map_fragment_module_home"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"/>
+            <!-- 分类 -->
+
+            <ExpandableListView
+                android:id="@+id/fragment_home_business_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:cacheColorHint="@color/white"
+                android:childDivider="@color/white"
+                android:divider="@color/white"
+                android:dividerHeight="10dp"
+                android:groupIndicator="@null" />
+
+            <!-- 名人名博 -->
+
+            <ExpandableListView
+                android:id="@+id/fragment_home_mingrenmingbo_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:cacheColorHint="@color/white"
+                android:childDivider="@color/white"
+                android:divider="@color/white"
+                android:dividerHeight="10dp"
+                android:groupIndicator="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <!-- 广告 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/drawable_layout_fenlei" >
+
+                    <TextView
+                        style="@style/style_fragment_home_fenlei_font"
+                        android:text="@string/home_text_youqing" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/bottom_adv_1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                             android:layout_weight="1"
+                            android:src="@drawable/adv_bottom0" />
+
+                        <View style="@style/style_view_vertical" />
+
+                        <ImageView
+                            android:id="@+id/bottom_adv_2"
+                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/adv_bottom1" />
+                    </LinearLayout>
+
+                    <View style="@style/style_view_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/bottom_adv_3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/adv_bottom2" />
+
+                        <View style="@style/style_view_vertical" />
+
+                        <ImageView
+                            android:id="@+id/bottom_adv_4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/adv_bottom3" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.ganggang.frame.common.MyScrollView>
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_info_mingrenmingbo"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_margin="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/module_home_feilei_mingrenmingbo_img"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/moren_smail" />
+
+        <TextView
+            android:id="@+id/module_home_feilei_mingrenmingbo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/module_home_feilei_mingrenmingbo_img"
+            android:textColor="@color/home_fenlei_font"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/module_home_feilei_mingrenmingbo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/module_home_feilei_mingrenmingbo_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/module_home_feilei_mingrenmingbo_img"
+            android:textColor="@color/home_fenlei_font"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

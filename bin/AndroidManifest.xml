@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ganggang.ganggangapp"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+ 
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <!-- 微博分享授权 -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="9a4bafddab028f9774cbf8730e0c624f" />
+        <meta-data
+            android:name="1104822976"
+            android:value="gMW7GxE9abMBw0EQ" />
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 首页activity -->
+        <activity
+            android:name="com.ganggang.ganggangapp.MainActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 广告引导页 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.login.AdvActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.login.advactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 地图应用 -->
+        <activity
+            android:name="com.ganggang.frame.freamwork.map.MyMap"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.ganggang.frame.freamwork.map.mymap" />
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <!-- 主页activity -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.module.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.module.homeactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登录 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.login.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.login.loginactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- QQ登录 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104822976" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+        <!-- 注册 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.login.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.login.registeractivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 商家详情 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.business.BusinessDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.business.businessdetailactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 点评 -->
+
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.comment.CommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.comment.commentactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 品牌列表 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.businessbrand.BusinessBrandActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.businessbrand.businessbrandactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 搜索 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.sreach.SreachActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.sreach.sreachactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 关于 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.about.GuanyuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.about.guanyuactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 服务协议 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.about.FuwuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.about.fuwuactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 免责说明 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.about.MianzeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.about.mianzeactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 品牌 跳 商家 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.businessbrand.BrandBusinessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.businessbrand.brandbusinessactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 导航map -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.map.NavigationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.map.navigationactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 地图 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.map.MyMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.map.mymapactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 个人信息界面 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.userinfo.UserInfoActivity"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.userinfo.userinfoactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.ganggang.ganggangapp.ui.userinfo.ModifyActivity"
+            android:theme="@style/mystyle50" >
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.ui.userinfo.modifyactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+             <receiver android:name="com.ganggang.ganggangapp.SwitchReceiver">
+            <intent-filter>
+                <action android:name="com.ganggang.ganggangapp.switchreceiver"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

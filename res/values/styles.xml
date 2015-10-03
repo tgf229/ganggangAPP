@@ -1,0 +1,100 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@color/home_top_layout</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="mystyle50" parent="android:Theme">
+        <item name="android:windowTitleSize">50dp</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowTitleSize">50dp</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- <item name="android:windowBackground">@drawable/loading_bg</item> -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 顶部左侧返回图片 的统一样式 -->
+    <style name="style_top_left_return">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:src">@drawable/back_button</item>
+    </style>
+
+    <!-- 顶部港港字体样式 -->
+    <style name="style_top_text_ganggang">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textColor">@color/ganggang_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 顶部港港图标 -->
+    <style name="style_top_img_ganggang">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:src">@drawable/logo</item>
+    </style>
+
+    <!-- 顶部港港左边返回样式 -->
+    <style name="style_top_img_return_left">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:src">@drawable/back_button</item>
+    </style>
+
+    <style name="style_view_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+        <style name="style_view_vertical">
+        <item name="android:layout_width">0.1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+</resources>

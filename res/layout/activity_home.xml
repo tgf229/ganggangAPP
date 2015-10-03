@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <ProgressBar
+        android:id="@+id/activity_home_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/activity_home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg_color"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:id="@+id/frame_activity_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" />
+
+        <RadioGroup
+            android:id="@+id/group_activity_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/home_top_layout"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" 
+            android:paddingBottom="0dp"
+            android:paddingTop="5dp">
+            
+            <!-- 首页 -->
+            <RadioButton
+                android:id="@+id/radiobtn_activity_home_home"
+                style="@style/style_activity_home_radio"
+                android:checked="true"
+                android:drawableTop="@drawable/drawable_module_radio_zhuye"
+                android:text="@string/home_text_home"
+                android:textColor="@drawable/drawable_home_text" />
+            <!-- 商家 -->
+
+            <RadioButton
+                android:id="@+id/radiobtn_activity_home_business"
+                style="@style/style_activity_home_radio"
+                android:drawableTop="@drawable/drawable_module_radio_shangjia"
+                android:text="@string/home_text_business"
+                android:textColor="@drawable/drawable_home_text" />
+            <!-- 我的 -->
+
+            <RadioButton
+                android:id="@+id/radiobtn_activity_home_wo"
+                style="@style/style_activity_home_radio"
+                android:drawableTop="@drawable/drawable_module_radio_wo"
+                android:text="@string/home_text_me"
+                android:textColor="@drawable/drawable_home_text" />
+            <!-- 更多 -->
+
+            <RadioButton
+                android:id="@+id/radiobtn_activity_home_more"
+                style="@style/style_activity_home_radio"
+                android:drawableTop="@drawable/drawable_module_radio_gengduo"
+                android:text="@string/home_text_more"
+                android:textColor="@drawable/drawable_home_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

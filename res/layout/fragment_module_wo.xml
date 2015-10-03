@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_huise_bg"
+    android:overScrollMode="never"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/myinfo_beijing_img"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+		
+            <com.ganggang.frame.common.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/userimage" />
+
+            <TextView
+                android:id="@+id/text_layout_wo_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/myinfo_lognote"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_wo_commit"
+                style="@style/style_wo_layout" >
+
+                <ImageView
+                    style="@style/style_wo_img"
+                    android:src="@drawable/write_icon" />
+
+                <TextView
+                    style="@style/style_wo_text"
+                    android:text="@string/myinfo_mycomment" />
+
+                <ImageView
+                    style="@style/style_wo_right_img"
+                    android:src="@drawable/myinfo_jiantou_icon" />
+            <View style="@style/style_wo_view" />
+            </RelativeLayout>
+
+            <!-- 个人信息 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_wo_info"
+                style="@style/style_wo_layout" >
+
+                <ImageView
+                    style="@style/style_wo_img"
+                    android:src="@drawable/myinfo_myinfo_icon" />
+
+                <TextView
+                    style="@style/style_wo_text"
+                    android:text="@string/myinfo_myinfo" />
+
+                <ImageView
+                    style="@style/style_wo_right_img"
+                    android:src="@drawable/myinfo_jiantou_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_wo_register"
+                style="@style/style_wo_layout" >
+
+                <ImageView
+                    style="@style/style_wo_img"
+                    android:src="@drawable/myinfo_zhuce_icon" />
+
+                <TextView
+                    style="@style/style_wo_text"
+                    android:text="@string/myinfo_register" />
+
+                <ImageView
+                    style="@style/style_wo_right_img"
+                    android:src="@drawable/myinfo_jiantou_icon" />
+            </RelativeLayout>
+		
+         <!--    <View style="@style/style_wo_view" /> -->
+            <!-- 绑定手机 -->
+
+            <!-- <RelativeLayout
+                android:id="@+id/layout_wo_bindphone"
+                style="@style/style_wo_layout" >
+
+                <ImageView
+                    style="@style/style_wo_img"
+                    android:src="@drawable/myinfo_shouji_icon" />
+
+                <TextView
+                    style="@style/style_wo_text"
+                    android:text="@string/myinfo_bindphone" />
+
+                <ImageView
+                    style="@style/style_wo_right_img"
+                    android:src="@drawable/myinfo_jiantou_icon" />
+            </RelativeLayout><View style="@style/style_wo_view" /> -->
+
+            
+            <!-- 绑定邮箱 -->
+
+            <!-- <RelativeLayout
+                android:id="@+id/layout_wo_bindemail"
+                style="@style/style_wo_layout" >
+
+                <ImageView
+                    style="@style/style_wo_img"
+                    android:src="@drawable/myinfo_bindmail" />
+
+                <TextView
+                    style="@style/style_wo_text"
+                    android:text="@string/myinfo_bindmail" />
+
+                <ImageView
+                    style="@style/style_wo_right_img"
+                    android:src="@drawable/myinfo_jiantou_icon" />
+            </RelativeLayout> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 修改密码 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_modify"
+                style="@style/style_wo_layout" >
+
+                <ImageView
+                    style="@style/style_wo_img"
+                    android:src="@drawable/myinfo_mima_icon" />
+
+                <TextView
+                    style="@style/style_wo_text"
+                    android:text="@string/myinfo_changekeyword" />
+
+                <ImageView
+                    style="@style/style_wo_right_img"
+                    android:src="@drawable/myinfo_jiantou_icon" />
+            </RelativeLayout>
+            <!-- <View style="@style/style_wo_view" /> -->
+             
+
+            
+            <!-- 退出登录 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_exitlogin"
+                style="@style/style_wo_layout" >
+
+                <ImageView
+                    style="@style/style_wo_img"
+                    android:src="@drawable/myinfo_tuichu_icon" />
+
+                <TextView
+                    style="@style/style_wo_text"
+                    android:text="@string/myinfo_quitlog" />
+
+                <ImageView
+                    style="@style/style_wo_right_img"
+                    android:src="@drawable/myinfo_jiantou_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

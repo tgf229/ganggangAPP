@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="group_item_bg">#F3F3F3</color>
+    <color name="group_item_pressed_bg">#E5E5E5</color>
+    <color name="child_item_bg">#E5E5E5</color>
+    <color name="child_item_diveder">#D6D6D5</color>
+    <color name="list_item_text_pressed_bg">#FF822E</color>
+    <color name="tab_text_color">#787878</color>
+    <color name="tab_text_pressed_color">#CD0000</color>
+    
+    
+    <color name="ganggang_color">#E184B3</color>
+    <color name="title_bg">#ff0cbaa0</color>
+    <color name="text_hint">#ff989898</color>
+    <color name="text_black">#ff333333</color>
+    <color name="text_green_three">#ff45c8b4</color>
+    <color name="theme_content_bg">#fff2f2f2</color>
+    <color name="btn_bg_orange_default">#fff6a869</color>
+    <color name="guid_2">#fff39800</color>
+    <color name="btn_bg_orange">#ffff9e40</color>
+    <color name="btn_bg_orange_hover">#fff77e42</color>
+    <color name="orange_default">#fff7462a</color>
+    <color name="gray_line">#ffd3d3d3</color>
+    <color name="information_business_tv">#444444</color>
+    <color name="gray">#ffffff</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="business_detail_hot_soil">#CCCCCC</color>
+    <color name="map_color">#32B9AA</color>
+    <color name="grey">#B4B4B4</color>
+    <color name="home_fenlei_layout">#D1D1D1</color>
+    <color name="home_fenlei_font">#666666</color>
+    <color name="home_search_layout">#BEBEBE</color>
+    <color name="home_bottom_layout">#F2F2F2</color>
+    <color name="home_top_layout">#F1F4FE</color>
+    <color name="bg_color">#EFEFEF</color>
+    <color name="home_font_noclick_color">#999999</color>
+    <color name="home_font_click_color">#4FC1E9</color>
+    <color name="input_text">#FAFAFA</color>
+    <color name="text_color">#BABABA</color>
+    <color name="login_btn">#29CCB7</color>
+    <color name="module_radio_check_text">#20CCB6</color>
+    <color name="module_radio_nocheck_text">#A9A9AB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="red">#FF0000</color>
+    <color name="login_text">#828282</color>
+    <color name="forget_bg">#F0EFF5</color>
+    <color name="text_yellow">#E6B04B</color>
+    <!-- 活动详情中的颜色 -->
+    <color name="module_info">#BEEFE9</color>
+    <color name="module_text_background">#F0EFF5</color>
+    <color name="module_wo_background">#EBEAEE</color>
+    <color name="area_text">#0099CC</color>
+
+    <color name="brand_kuang">#EAEAEA</color>
+    <color name="brand_bg_color">#F2F4F1</color>
+</resources>

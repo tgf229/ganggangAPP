@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       
+    <string name="title_activity_register">注册</string>
+    <string name="hint_activity_register_id_editView">请输入手机或邮箱</string>
+    <string name="hint_activity_register_psword_editView1">请输入密码</string>
+    <string name="hint_activity_register_psword_editView2">请确认密码</string>
+    <string name="activity_register_register_button">注册</string>
+    <string name="activity_register_label_hasAccount">已拥有账户？</string>
+    <string name="activity_register_login_button">立即登陆</string>
+</resources>

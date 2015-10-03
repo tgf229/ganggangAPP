@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bg_color" >
+
+    <ImageView
+        android:id="@+id/business_detail_top_return"
+        style="@style/style_top_img_return_left" />
+
+    <TextView
+        android:id="@+id/business_detail_top_centent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/business_detail_top_centent"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/business_detail_top_fujin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:onClick="TopClick"
+        android:padding="10dp"
+        android:src="@drawable/fujin_icon" />
+  
+</RelativeLayout>

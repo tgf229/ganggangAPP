@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="myinfo_top">个人设置</string>
+    <string name="myinfo_lognote">还没有登录，点击登录</string>
+    <string name="myinfo_mycomment">我的评论</string>
+    <string name="myinfo_myinfo">个人信息</string>
+    <string name="myinfo_register">注册账户</string>
+       <string name="myinfo_xiugai">修改密码</string>
+    <string name="myinfo_bindphone">绑定手机</string>
+    <string name="myinfo_bindmail">绑定邮箱</string>
+    <string name="myinfo_changekeyword">修改密码</string>
+    <string name="myinfo_quitlog">退出登录</string>
+
+
+</resources>

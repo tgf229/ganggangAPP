@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="business_district">区域</string>
+    <string name="business_type">分类</string>
+    <string name="business_desc">排序</string>
+    
+    
+    <string name="business_detail">商户详情</string>
+    <string name="business_summary_title">简介</string>
+    <string name="business_time_title">营业时间</string>
+    <string name="business_traffic_title">交通信息</string>
+    <string name="business_comment_title">用户点评</string>
+    <string name="business_more">更多</string>
+    <string name="business_nearby">附近分店</string>
+    <string name="business_all_nearby">附近所有分店</string>
+    
+    
+    
+</resources>

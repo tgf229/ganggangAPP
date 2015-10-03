@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@color/home_top_layout" >
+
+    <ImageView
+        android:id="@+id/layout_top_sreach_return"
+        style="@style/style_top_img_return_left" 
+        android:layout_marginRight="10dp"
+        />
+
+    <SearchView
+        android:id="@+id/layout_top_sreach_edit"
+        android:layout_width="0dp"
+        android:layout_height="40dp" 
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/home_text_search"
+        />
+<!--     <ImageView 
+        android:id="@+id/layout_top_sreach_fenxiang"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/fenxiang_icon"
+        /> -->
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/home_top_layout" >
+
+    <ImageView
+        android:id="@+id/layout_top_businessbrand_left_return"
+        style="@style/style_top_left_return" />
+
+    <TextView
+        android:id="@+id/layout_top_businessbrand_centnet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="美食"
+        android:textColor="@color/ganggang_color"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/layout_top_businessbrand_find_business"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:onClick="TopClick"
+        android:padding="12dp"
+        android:src="@drawable/iconfont_gongnengyetongbuqiehuan" />
+
+    <ImageView
+        android:id="@+id/layout_top_businessbrand_location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:onClick="TopClick"
+        android:padding="10dp"
+        android:src="@drawable/fujin_icon" />
+
+</RelativeLayout>

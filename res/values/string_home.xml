@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_text_home">首頁</string>
+    <string name="home_text_business">商家</string>
+    <string name="home_text_me">我的</string>
+    <string name="home_text_more">更多</string>
+    <string name="home_text_search">搜索</string>
+   	
+    <string name="home_text_redian">香港熱點</string>
+    <string name="home_text_chihe">酒樓餐飲</string>
+    <string name="home_text_zhusu">數碼影音</string>
+    <string name="home_text_chuxing">珠寶金行</string>
+    <string name="home_text_yule">購物天堂</string>
+    <string name="home_text_gouwu">保健藥品</string>
+    <string name="home_text_lvyou">美容美體</string>
+    <string name="home_text_shenghuo">專業服務</string>
+    
+
+    <string name="home_text_mingrenmingbo">名人名博</string>
+    <string name="home_text_youqing">合作夥伴</string>
+    
+</resources>

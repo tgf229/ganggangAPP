@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:mobile="http://rong.android.TextView">
+
+    <!-- radioButton 样式 -->
+    <style name="style_activity_home_radio">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:drawablePadding">3dp</item>
+    </style>
+
+    <style name="style_fragment_home_fenlei_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <!-- 分类字体样式 -->
+    <style name="style_fragment_home_fenlei_font">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 分类 箭头样式 -->
+    <style name="style_fragment_home_fenlei_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <!-- 分类 图片 -->
+    <style name="style_fragment_home_fenlei_img_business">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+    <!-- 分类 店名 -->
+    <style name="style_fragment_home_fenlei_name_business">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/home_fenlei_font</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+    <!-- 类型 -->
+    <style name="style_fragment_home_fenlei_leixing_business">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/home_fenlei_font</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- 店定位 -->
+    <style name="style_fragment_home_fenlei_localtion_img_business">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <!--
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        -->
+    </style>
+    <!-- 店地址 -->
+    <style name="style_fragment_home_fenlei_localtion_business">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/home_fenlei_font</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- 店距离 -->
+    <style name="style_fragment_home_fenlei_juli_business">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textColor">@color/home_fenlei_font</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- 电话img -->
+    <style name="style_fragment_home_fenlei_phone_img_business">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    <!-- 电话 -->
+    <style name="style_fragment_home_fenlei_phone_business">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textColor">@color/home_fenlei_font</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- 价格 -->
+    <style name="style_fragment_home_fenlei_price_business">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/home_fenlei_font</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

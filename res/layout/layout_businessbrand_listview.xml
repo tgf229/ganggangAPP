@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ganggang.frame.constant.refresh.PullListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview_businessbreand"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:scrollbars="none"
+   android:fadingEdge="none"
+    android:background="@color/brand_bg_color"
+    android:divider="@color/brand_bg_color"
+    android:dividerHeight="10dp" />

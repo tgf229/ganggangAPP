@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="myinfo_top">個人設置</string>
+    <string name="myinfo_lognote">還沒有登錄，點擊登入</string>
+    <string name="myinfo_mycomment">我的評論</string>
+    <string name="myinfo_myinfo">個人資訊</string>
+    <string name="myinfo_register">注册账户</string>
+    <string name="myinfo_xiugai">修改密码</string>
+    <string name="myinfo_bindphone">綁定手機</string>
+    <string name="myinfo_bindmail">綁定郵箱</string>
+    <string name="myinfo_changekeyword">修改密碼</string>
+    <string name="myinfo_quitlog">退出登录</string>
+
+</resources>

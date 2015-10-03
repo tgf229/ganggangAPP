@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="err_mobile_null">手機號碼不能為空</string>
+    <string name="err_mobile">請輸入正確的手機號碼</string>
+    <string name="err_password_len">密码不能少于6位</string>
+    <string name="err_password_null">密碼不能為空</string>
+    <string name="err_username_len_max">用戶名過長</string>
+    <string name="err_username_len_min">用户名太短</string>
+    <string name="err_username_null">用户名不能为空</string>
+    <string name="err_validatemsg_null">驗證碼不能為空</string>
+         <string name="err_passwrod_old_ok">密码修改成功</string>
+    <string name="err_validatemsg">验证码为6位数字</string>
+    <string name="err_validateemail">邮箱格式不正确</string>
+    <string name="err_age">年龄不合法</string>
+    <string name="err_age_null">年龄不能为空</string>
+    <string name="err_passwrod_old_not">旧密码错误</string>
+    <!-- 网络连接 错误提示 -->
+    <string name="err_network_null">无网络，检查网络</string>
+    <string name="err_network_http">网络链接错误</string>
+    <string name="err_network_timeout">请求超时</string>
+    <string name="err_network_unknown">网络错误</string>
+
+</resources>

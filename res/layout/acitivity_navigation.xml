@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <ProgressBar
+        android:id="@+id/navigation_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/navigation_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+<!-- 
+        <LinearLayout
+            android:id="@+id/navigation_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            style="@style/map_bottom_font"
+
+            <ImageView
+                android:id="@+id/navigation_layout_map_bus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/bus_on"
+                android:text="@string/map_bus" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <ImageView
+                android:id="@+id/navigation_layout_map_drive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/drive_on" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <ImageView
+                android:id="@+id/navigation_layout_map_walk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/walk_on"
+                android:text="@string/map_walk" />
+        </LinearLayout> -->
+    </RelativeLayout>
+
+</RelativeLayout>
